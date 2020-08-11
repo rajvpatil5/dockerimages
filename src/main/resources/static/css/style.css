@@ -132,7 +132,20 @@ display: none;
 	max-width: 1170px;
 	margin: auto;
 }
-
+header .container .login a{
+	margin: 24px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Open-Sans', sans-serif;
+}
+header .container .login a:hover{
+	color: #c11325;
+}
+header .container .login span{
+	margin-left: 463px;
+}
 
 
 /* home */
@@ -755,7 +768,17 @@ display: none;
 	max-width: 50%;
 	padding: 15px;
 }
+/* Chrome, Safari, Edge, Opera */
+.contact .content .form input::-webkit-outer-spin-button,
+.contact .content .form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+.contact .content .form input[type=number] {
+  -moz-appearance: textfield;
+}
 .contact .content .form input,
 .contact .content .form textarea{
  height: 45px;
@@ -870,5 +893,26 @@ display: none;
 	color:#c5c5c5;
 	font-size: 15px;
 }
+.imageInRight {
+	background-image: url('/images/join.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
+.copyright {
+	height: 100px;
+	color: white;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Open-Sans', sans-serif;
+	font-size: 10px;
+}
+
+.copyicon {
+	font-size: 15px;
+}
 

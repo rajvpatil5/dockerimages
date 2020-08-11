@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Now</title>
+    <link rel="stylesheet" href="/css/style.css">
+ 
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">Fitness <span>Club</span></a>
+            </div>
+            <div class="login">
+                <span></span>
+                <a href="/registration.html">Register Now</a>
+                <a href="">LogIn</a>
+            </div>
+            <a href="javascript:void(0)" class="ham-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/}">Services</a></li>
+                    <li><a href="/">Classes</a></li>
+                    <li><a href="/">Schedule</a></li>
+                    <li><a href="/">Price</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End Header  -->
+
+
+
+    <!-- Start Registration Form  -->
+    <!-- Start Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="content">
+                <div class="box form wow slideInLeft">
+                    <form>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <input type="number" placeholder="Age">
+                        <input type="email" placeholder="Email Id">
+                        <input type="password" placeholder="Password">
+                        <input type="number" placeholder="Mobile Number">
+                        <input type="number" placeholder="Postcode">
+                        <button type="submit">Register Now</button>
+                    </form>
+                </div>
+                <div class="box text wow imageInRight"></div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <div class="copyicon">
+            PowerBy &copy; Focus5Fitness
+        </div>
+        <div class="instruction">
+            All Rights Reserved
+        </div>
+    </div>
+    <!-- End Registration Form  -->
+
+
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".ham-burger, .nav ul li a").click(function () {
+
+                $(".nav").toggleClass("open")
+
+                $(".ham-burger").toggleClass("active");
+            })
+            $(".accordian-container").click(function () {
+                collapsible: true;
+                $(".accordian-container").children(".body").slideUp();
+                $(".accordian-container").removeClass("active")
+                $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+                $(this).children(".body").slideDown();
+                $(this).addClass("active")
+                $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+            })
+
+            $(".nav ul li a, .go-down").click(function (event) {
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html,body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+
+                    // add active class in navigation
+                    // $(".nav ul li a").removeClass("active")
+                    // $(this).addClass("active")
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>

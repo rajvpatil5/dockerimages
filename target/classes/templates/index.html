@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org/">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +13,11 @@
         <div class="container">
             <div class="logo">
                 <a href="">Fitness <span>Club</span></a>
+            </div>
+            <div class="login">
+                <span></span>
+                <a href="/registration">Register Now</a>
+                <a href="/signin">LogIn</a>
             </div>
             <a href="javascript:void(0)" class="ham-burger">
                 <span></span>
@@ -28,7 +32,7 @@
                     <li><a href="#classes">Classes</a></li>
                     <li><a href="#schedule">Schedule</a></li>
                     <li><a href="#price">Price</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a th:href="@{/contactus}">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -408,44 +412,15 @@
 
 
 
- <!-- Start Contact -->
- <section class="contact" id="contact">
-    <div class="container">
-       <div class="content">
-           <div class="box form wow slideInLeft">
-              <form>
-                 <input type="text" placeholder="Full Name">
-                 <input type="text" placeholder="Email Id">
-                 <input type="text" placeholder="Mobile Number">
-                 <input type="text" placeholder="Message">
-                 <button type="submit">Send Message</button>
-              </form>
-           </div>
-           <div class="box text wow slideInRight">
-                <h2>Get Connected with Gym</h2>
-                 <p class="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                 <div class="info">
-                     <ul>
-                         <li><span class="fa fa-map-marker"></span>Focus 5 Fitness Club, Near Morya Heights, Canol Road, 411058, Warje, Pune, Maharashtra 411058</li>
-                         <li><span class="fa fa-phone"></span> +91 8999543199</li>
-                         <li><span class="fa fa-envelope"></span> info@gym.com</li>
-                     </ul>
-                 </div>
-                 <div class="social">
-                      <a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook"></span></a>
-                      <a href="https://www.linkedin.com/" target="_blank"><span class="fa fa-linkedin"></span></a>
-                      <a href="https://www.twitter.com/" target="_blank"><span class="fa fa-twitter"></span></a>
-                      <a href="https://www.youtube.com/" target="_blank"><span class="fa fa-youtube-play"></span></a>
-                      <a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram"></span></a>
-                 </div>
-
-                 <div class="copy">
-                     PowerBy &copy; AlphaTech
-                 </div>
-           </div>
-       </div>
+ 
+ <div class="copyright">
+    <div class="copyicon">
+        PowerBy &copy; Focus5Fitness
     </div>
- </section>
+    <div class="instruction">
+        All Rights Reserved
+    </div>
+</div>
 <!-- End Contact -->
 
 

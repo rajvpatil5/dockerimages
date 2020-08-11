@@ -1,0 +1,72 @@
+.login-form {
+            
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+.login-form::before {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 100vh;   
+    width: 100%;   
+    background-image: url('/images/login.jpg');
+    filter: brightness(40%);
+
+}
+
+.login-form .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form .container .content {
+    /* border: 2px solid red; */
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+}
+
+.login-form .container .content input {
+    height: 45px;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-family: 'Open-sans', sans-serif;
+    color: #ffffff;
+}
+.login-form .container .content input:focus{
+    outline: none;
+}
+.login-form .container .content input::placeholder{
+    color: white;
+}
+.login-form .container .content button {
+    border: none;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    height: 45px;
+    padding: 0px 50px;
+    border: 1px solid transparent;
+    background-color: #c11325;
+    color: #ffffff;
+    font-size: 15px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.login-form .container .content button:hover {
+	border:1px solid white;
+}
