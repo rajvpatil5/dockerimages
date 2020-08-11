@@ -9,10 +9,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.docker.dao.MessageDAO;
 import com.docker.entity.Message;
+import com.docker.service.MessageService;
 @Controller
 public class GymController {
 	@Autowired
-	private MessageDAO messageDAO;
+	private MessageService messageService;
 	
 	@GetMapping("/")
 	public String homePage() {
@@ -35,7 +36,7 @@ public class GymController {
 
 	@PostMapping("/sendmessage")
 	public String sendMessage(@ModelAttribute("message")Message message) {
-		messageDAO.save(message);
+		messageService.saveMessage(message);
 		return "redirect:/";
 	}
 }
