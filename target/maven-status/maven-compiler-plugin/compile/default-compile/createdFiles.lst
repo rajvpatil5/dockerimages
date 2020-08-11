@@ -1,0 +1,7 @@
+com\docker\service\MessageService.class
+com\docker\controller\GymController.class
+com\docker\dao\MessageDAO.class
+com\docker\rest\DemoRestApi.class
+com\docker\DockerSpringApplication.class
+com\docker\entity\Message.class
+com\docker\service\MessageServiceImplementation.class
