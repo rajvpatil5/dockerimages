@@ -2,83 +2,83 @@
 <html lang="en" xmlns:th="https://www.thymeleaf.org/">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Now</title>
-    <link rel="stylesheet" href="/css/style.css">
- 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Now</title>
+<link rel="stylesheet" href="/css/style.css">
+<style type="text/css">
+.errormessage{
+color:red;
+margin-bottom:25px;
+}
+</style>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="">Fitness <span>Club</span></a>
-            </div>
-            <div class="login">
-                <span></span>
-                <a href="/registration.html">Register Now</a>
-                <a href="">LogIn</a>
-            </div>
-            <a href="javascript:void(0)" class="ham-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <div class="nav">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/}">Services</a></li>
-                    <li><a href="/">Classes</a></li>
-                    <li><a href="/">Schedule</a></li>
-                    <li><a href="/">Price</a></li>
-                    <li><a href="/">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <!-- End Header  -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="/">Fitness <span>Club</span></a>
+			</div>
+			<div class="login">
+				<a href="/registration">Register Now</a> <a href="/signin">LogIn</a>
+			</div>
+			<a href="javascript:void(0)" class="ham-burger"> <span></span> <span></span>
+				<span></span>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/">About</a></li>
+					<li><a href="/}">Services</a></li>
+					<li><a href="/">Classes</a></li>
+					<li><a href="/">Schedule</a></li>
+					<li><a href="/">Price</a></li>
+					<li><a href="/">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- End Header  -->
 
 
 
-    <!-- Start Registration Form  -->
-    <!-- Start Contact -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="content">
-                <div class="box form wow slideInLeft">
-                    <form>
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <input type="number" placeholder="Age">
-                        <input type="email" placeholder="Email Id">
-                        <input type="password" placeholder="Password">
-                        <input type="number" placeholder="Mobile Number">
-                        <input type="number" placeholder="Postcode">
-                        <button type="submit">Register Now</button>
-                    </form>
-                </div>
-                <div class="box text wow imageInRight"></div>
-            </div>
-        </div>
-    </section>
-    <div class="copyright">
-        <div class="copyicon">
-            PowerBy &copy; Focus5Fitness
-        </div>
-        <div class="instruction">
-            All Rights Reserved
-        </div>
-    </div>
-    <!-- End Registration Form  -->
+	<!-- Start Registration Form  -->
+	<!-- Start Contact -->
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="content">
+				<div class="box form wow slideInLeft">
+					<form th:action="@{/register}" th:object="${regi}" method="post">
+						<input type="text" placeholder="First Name" th:field="*{firstName}"> 
+						<input type="text" placeholder="Last Name" th:field="*{lastName}"> 
+						<input type="number" placeholder="Age" th:field="*{age}"> 
+						<input type="email" placeholder="Email Id" th:field="*{emailId}"> 
+						<div class="errormessage" th:if="${errorMessage}">
+    						<div th:text="${errorMessage}"></div>
+						</div>
+						<input type="password" placeholder="Password" th:field="*{password}"> 
+						<input type="number" placeholder="Mobile Number" th:field="*{mobileNumber}"> 
+						<button type="submit" th:onclick="javascript:alert('Your details will be save successfully!!! Click OK to go to Home');">Register Now</button>
+					</form>
+				</div>
+				<div class="box text wow imageInRight"></div>
+			</div>
+		</div>
+	</section>
+	<div class="copyright">
+		<div class="copyicon">PowerBy &copy; Focus5Fitness</div>
+		<div class="instruction">All Rights Reserved</div>
+	</div>
+	<!-- End Registration Form  -->
 
 
 
 
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
+	<!-- jquery -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
         $(document).ready(function () {
 
             $(".ham-burger, .nav ul li a").click(function () {
@@ -117,6 +117,12 @@
             })
         })
 
+
+    </script>
+	<script type="text/javascript">
+    function messageSent() {
+    	  alert("Message sent successfully!!!");
+    	}
     </script>
 </body>
 

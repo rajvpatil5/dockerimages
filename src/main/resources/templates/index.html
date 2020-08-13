@@ -2,448 +2,470 @@
 <html lang="en" xmlns:th="https://www.thymeleaf.org/">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focus5Fitness</title>
-    <link rel="stylesheet" href="/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Focus5Fitness</title>
+<link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="">Fitness <span>Club</span></a>
-            </div>
-            <div class="login">
-                <span></span>
-                <a href="/registration">Register Now</a>
-                <a href="/signin">LogIn</a>
-            </div>
-            <a href="javascript:void(0)" class="ham-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <div class="nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Services</a></li>
-                    <li><a href="#classes">Classes</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#price">Price</a></li>
-                    <li><a th:href="@{/contactus}">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <!-- End Header  -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="">Fitness <span>Club</span></a>
+			</div>
+			<div class="login">
+				<a href="/registration">Register Now</a> <a href="/signin">LogIn</a>
+			</div>
+			<a href="javascript:void(0)" class="ham-burger"> <span></span> <span></span>
+				<span></span>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#service">Services</a></li>
+					<li><a href="#classes">Classes</a></li>
+					<li><a href="#schedule">Schedule</a></li>
+					<li><a href="#price">Price</a></li>
+					<li><a th:href="@{/contactus}">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- End Header  -->
 
-    <!-- Start Home -->
-    <section class="home" id="home">
-        <div class="container">
-            <h1>Don’t <span>stop</span> till you drop!</h1>
-            <h1>Willpower knows no <span>obstacles</span>.</h1>
-        </div>
-
-
-        <!-- go-down -->
-        <a href="#about" class="go-down">
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </a>
-        <!-- go-down -->
-    </section>
-    <!-- End Home -->
+	<!-- Start Home -->
+	<section class="home" id="home">
+		<div class="container">
+			<h1>
+				Don’t <span>stop</span> till you drop!
+			</h1>
+			<h1>
+				Willpower knows no <span>obstacles</span>.
+			</h1>
+		</div>
 
 
-    <!-- Start About  -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="content">
-                <div class="box">
-                    <div class="inner">
-                        <div class="img">
-                            <img src="/images/about1.jpg" alt="about">
-                        </div>
-                        <div class="text">
-                            <h4>Best Training</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium aut, natus,
-                                incidunt quos ipsam dicta, quo sequi labore perspiciatis voluptatem id suscipit magni.
-                                Dolorum dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Aliquid, adipisci!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="inner">
-                        <div class="img">
-                            <img src="/images/about2.jpg" alt="about">
-                        </div>
-                        <div class="text">
-                            <h4>Best Training</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium aut, natus,
-                                incidunt quos ipsam dicta, quo sequi labore perspiciatis voluptatem id suscipit magni.
-                                Dolorum dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Aliquid, adipisci!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="inner">
-                        <div class="img">
-                            <img src="/images/about3.jpg" alt="about">
-                        </div>
-                        <div class="text">
-                            <h4>Best Training</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium aut, natus,
-                                incidunt quos ipsam dicta, quo sequi labore perspiciatis voluptatem id suscipit magni.
-                                Dolorum dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Aliquid, adipisci!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End About  -->
+		<!-- go-down -->
+		<a href="#about" class="go-down"> <i class="fa fa-chevron-down"
+			aria-hidden="true"></i>
+		</a>
+		<!-- go-down -->
+	</section>
+	<!-- End Home -->
 
 
-    <!-- Start Service  -->
-
-    <section class="service" id="service">
-        <div class="container">
-            <div class="content">
-                <div class="text">
-                    <h2>Services</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium aut, natus,
-                        incidunt quos ipsam dicta, quo sequi labore perspiciatis voluptatem id suscipit magni.
-                        Dolorum dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Aliquid, adipisci!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium aut, natus,
-                        incidunt quos ipsam dicta, quo sequi labore perspiciatis voluptatem id suscipit magni.
-                        Dolorum dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Aliquid, adipisci!</p>
-                    <a href="#" class="btn">Start Now</a>
-                </div>
-                <div class="accordian box">
-                    <div class="accordian-container active">
-                        <div class="head">
-                            <h4>Cardiovascular Equipments 1</h4>
-                            <span class="fa fa-angle-down"></span>
-                        </div>
-                        <div class="body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium aut, natus,
-                                incidunt quos ipsam dicta, quo sequi labore perspiciatis voluptatem id suscipit magni.
-                                Dolorum dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Aliquid, adipisci!</p>
-                        </div>
-                    </div>
-                    <div class="accordian-container">
-                        <div class="head">
-                            <h4>Cardiovascular Equipments 2</h4>
-                            <span class="fa fa-angle-up"></span>
-                        </div>
-                        <div class="body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium aut, natus,
-                                incidunt quos ipsam dicta, quo sequi labore perspiciatis voluptatem id suscipit magni.
-                                Dolorum dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Aliquid, adipisci!</p>
-                        </div>
-                    </div>
-                    <div class="accordian-container">
-                        <div class="head">
-                            <h4>Cardiovascular Equipments 3</h4>
-                            <span class="fa fa-angle-up"></span>
-                        </div>
-                        <div class="body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium aut, natus,
-                                incidunt quos ipsam dicta, quo sequi labore perspiciatis voluptatem id suscipit magni.
-                                Dolorum dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Aliquid, adipisci!</p>
-                        </div>
-                    </div>
-                    <div class="accordian-container">
-                        <div class="head">
-                            <h4>Cardiovascular Equipments 4</h4>
-                            <span class="fa fa-angle-up"></span>
-                        </div>
-                        <div class="body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium aut, natus,
-                                incidunt quos ipsam dicta, quo sequi labore perspiciatis voluptatem id suscipit magni.
-                                Dolorum dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Aliquid, adipisci!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Service  -->
+	<!-- Start About  -->
+	<section class="about" id="about">
+		<div class="container">
+			<div class="content">
+				<div class="box">
+					<div class="inner">
+						<div class="img">
+							<img src="/images/about1.jpg" alt="about">
+						</div>
+						<div class="text">
+							<h4>Best Training</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Omnis praesentium aut, natus, incidunt quos ipsam dicta, quo
+								sequi labore perspiciatis voluptatem id suscipit magni. Dolorum
+								dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor
+								sit amet, consectetur adipisicing elit. Aliquid, adipisci!</p>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="inner">
+						<div class="img">
+							<img src="/images/about2.jpg" alt="about">
+						</div>
+						<div class="text">
+							<h4>Best Training</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Omnis praesentium aut, natus, incidunt quos ipsam dicta, quo
+								sequi labore perspiciatis voluptatem id suscipit magni. Dolorum
+								dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor
+								sit amet, consectetur adipisicing elit. Aliquid, adipisci!</p>
+						</div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="inner">
+						<div class="img">
+							<img src="/images/about3.jpg" alt="about">
+						</div>
+						<div class="text">
+							<h4>Best Training</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Omnis praesentium aut, natus, incidunt quos ipsam dicta, quo
+								sequi labore perspiciatis voluptatem id suscipit magni. Dolorum
+								dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor
+								sit amet, consectetur adipisicing elit. Aliquid, adipisci!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About  -->
 
 
-    <!-- Start Classes  -->
-    <section class="classes" id="classes">
-        <div class="container">
-            <div class="content">
-                <div class="box img wow slideInLeft">
-                    <img src="images/class2.png" alt="classes" />
-                </div>
-                <div class="box text wow slideInRight">
-                    <h2>Our Classes</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                    </p>
-                    <div class="class-items">
-                        <div class="item wow bounceInUp">
-                            <div class="item-img">
-                                <img src="images/class1.jpg" alt="classes" />
-                            </div>
-                            <div class="item-text">
-                                <h4>Stretching Training</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
-                        </div>
-                        
-                            <div class="details">
-                                <a href="">Get more details on other Classes</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Classes -->
+	<!-- Start Service  -->
+
+	<section class="service" id="service">
+		<div class="container">
+			<div class="content">
+				<div class="text">
+					<h2>Services</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Omnis praesentium aut, natus, incidunt quos ipsam dicta, quo sequi
+						labore perspiciatis voluptatem id suscipit magni. Dolorum dolorem
+						atque eveniet pariatur voluptatibus?Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit. Aliquid, adipisci!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Omnis praesentium aut, natus, incidunt quos ipsam dicta, quo sequi
+						labore perspiciatis voluptatem id suscipit magni. Dolorum dolorem
+						atque eveniet pariatur voluptatibus?Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit. Aliquid, adipisci!</p>
+					<a href="#" class="btn">Start Now</a>
+				</div>
+				<div class="accordian box">
+					<div class="accordian-container active">
+						<div class="head">
+							<h4>Cardiovascular Equipments 1</h4>
+							<span class="fa fa-angle-down"></span>
+						</div>
+						<div class="body">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Omnis praesentium aut, natus, incidunt quos ipsam dicta, quo
+								sequi labore perspiciatis voluptatem id suscipit magni. Dolorum
+								dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor
+								sit amet, consectetur adipisicing elit. Aliquid, adipisci!</p>
+						</div>
+					</div>
+					<div class="accordian-container">
+						<div class="head">
+							<h4>Cardiovascular Equipments 2</h4>
+							<span class="fa fa-angle-up"></span>
+						</div>
+						<div class="body">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Omnis praesentium aut, natus, incidunt quos ipsam dicta, quo
+								sequi labore perspiciatis voluptatem id suscipit magni. Dolorum
+								dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor
+								sit amet, consectetur adipisicing elit. Aliquid, adipisci!</p>
+						</div>
+					</div>
+					<div class="accordian-container">
+						<div class="head">
+							<h4>Cardiovascular Equipments 3</h4>
+							<span class="fa fa-angle-up"></span>
+						</div>
+						<div class="body">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Omnis praesentium aut, natus, incidunt quos ipsam dicta, quo
+								sequi labore perspiciatis voluptatem id suscipit magni. Dolorum
+								dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor
+								sit amet, consectetur adipisicing elit. Aliquid, adipisci!</p>
+						</div>
+					</div>
+					<div class="accordian-container">
+						<div class="head">
+							<h4>Cardiovascular Equipments 4</h4>
+							<span class="fa fa-angle-up"></span>
+						</div>
+						<div class="body">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Omnis praesentium aut, natus, incidunt quos ipsam dicta, quo
+								sequi labore perspiciatis voluptatem id suscipit magni. Dolorum
+								dolorem atque eveniet pariatur voluptatibus?Lorem ipsum dolor
+								sit amet, consectetur adipisicing elit. Aliquid, adipisci!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Service  -->
 
 
+	<!-- Start Classes  -->
+	<section class="classes" id="classes">
+		<div class="container">
+			<div class="content">
+				<div class="box img wow slideInLeft">
+					<img src="images/class2.png" alt="classes" />
+				</div>
+				<div class="box text wow slideInRight">
+					<h2>Our Classes</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and
+						typesetting industry. Lorem Ipsum has been the industry's standard
+						dummy text ever since the 1500s, when an unknown printer took a
+						galley of type and scrambled it to make a type specimen book. It
+						has survived not only five centuries,</p>
+					<div class="class-items">
+						<div class="item wow bounceInUp">
+							<div class="item-img">
+								<img src="images/class1.jpg" alt="classes" />
+							</div>
+							<div class="item-text">
+								<h4>Stretching Training</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry.</p>
+							</div>
+						</div>
 
+						<div class="details">
+							<a href="">Get more details on other Classes</a>
+						</div>
 
-    <!-- Start Today -->
- <section class="start-today">
-    <div class="container">
-         <div class="content">
-               <div class="box text wow slideInLeft">
-                    <h2>Start Your Training Today</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-                    <a href="" class="btn">Start Now</a>
-               </div>
-               <div class="box img wow slideInRight">
-                    <img src="images/gallery4.jpg" alt="start today" />
-               </div>
-
-         </div>
-    </div>
-</section>
-<!-- End Start Today -->
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- End Classes -->
 
 
 
 
-<!-- Start Schedule -->
-<section class="schedule" id="schedule">
-    <div class="container">
-          <div class="content">
-                 <div class="box text wow slideInLeft">
-                        <h2>Classes Schedule</h2>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        </p>
-                        <img src="images/schedule1.png" alt="schedule" />
-                 </div>
-                 <div class="box timing wow slideInRight">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Gym timing</th>
-                            <th>Morning Activity</th>
-                            <th>Evening Activity</th>
-                            <th>Room</th>
-                        </tr>
-                    </thead>
-                     <tbody>
-                         <tr>
-                             <td class="day">Monday</td>
-                             <td><strong>6:00 AM - 10:00 PM</strong></td>
-                             <td>Flexibility Activities<br/> 7:00 AM - 9:00 AM</td>
-                             <td>Aerobic Activities <br/> 6:00 PM - 8:00 PM</td>
-                             <td>Main Hall</td>
-                         </tr>
-                         <tr>
-                             <td class="day">Tuesday</td>
-                             <td><strong>6:00 AM - 10:00 PM</strong></td>
-                             <td>Zumba <br/> 7:00 AM - 9:00 AM</td>
-                             <td>Muscle Strengthening <br/> 6:00 PM - 8:00 PM</td>
-                             <td>Main Hall</td>
-                         </tr>
-                         <tr>
-                             <td class="day">Wednesday</td>
-                             <td><strong>6:00 AM - 10:00 PM</strong></td>
-                             <td>Commando Training<br/> 7:00 AM - 9:00 AM</td>
-                             <td>Endurance activities <br/> 6:00 PM - 8:00 PM</td>
-                             <td>Main Hall</td>
-                         </tr>
-                         <tr>
-                             <td class="day">Thursday</td>
-                             <td><strong>6:00 AM - 10:00 PM</strong></td>
-                             <td>Endurance activities<br/> 7:00 AM - 9:00 AM</td>
-                             <td>Commando Training <br/> 6:00 PM - 8:00 PM</td>
-                             <td>Main Hall</td>
-                         </tr>
-                         <tr>
-                             <td class="day">Friday</td>
-                            <td><strong>6:00 AM - 10:00 PM</strong></td>
-                             <td>Muscle Strengthening <br/> 7:00 AM - 9:00 AM</td>
-                             <td>Zumba <br/> 6:00 PM - 8:00 PM</td>
-                             <td>Main Hall</td>
-                         </tr>
-                         <tr>
-                             <td class="day">Saturday</td>
-                             <td><strong>6:00 AM - 10:00 PM</strong></td>
-                             <td>Aerobic Activities <br/> 7:00 AM - 9:00 AM</td>
-                             <td>Flexibility Activities <br/> 6:00 PM - 8:00 PM</td>
-                             <td>Main Hall</td>
-                         </tr>
-                     </tbody>
-                </table>
-                 </div>
-          </div>
-    </div>
-</section>
-<!-- End Schedule -->
+	<!-- Start Today -->
+	<section class="start-today">
+		<div class="container">
+			<div class="content">
+				<div class="box text wow slideInLeft">
+					<h2>Start Your Training Today</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and
+						typesetting industry. Lorem Ipsum has been the industry's standard
+						dummy text ever since the 1500s, when an unknown printer took a
+						galley of type and scrambled it to make a type specimen book. It
+						has survived not only five centuries,</p>
+					<a href="" class="btn">Start Now</a>
+				</div>
+				<div class="box img wow slideInRight">
+					<img src="images/gallery4.jpg" alt="start today" />
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Start Today -->
 
 
 
 
-<!-- Start Gallery -->
-<section class="gallery" id="gallery">
-    <h2>Workout Gallery</h2>
-   <div class="content">
-        <div class="box wow slideInLeft">
-             <img src="images/gallery1.jpg" alt="gallery" />
-        </div>
-        <div class="box wow slideInRight">
-             <img src="images/gallery2.jpg" alt="gallery" />
-        </div>
-        <div class="box wow slideInLeft">
-             <img src="images/gallery3.jpg" alt="gallery" />
-        </div>
-        <div class="box wow slideInRight">
-             <img src="images/gallery4.jpg" alt="gallery" />
-        </div>
-   </div>
-</section>
-<!-- End Gallery -->
+	<!-- Start Schedule -->
+	<section class="schedule" id="schedule">
+		<div class="container">
+			<div class="content">
+				<div class="box text wow slideInLeft">
+					<h2>Classes Schedule</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and
+						typesetting industry. Lorem Ipsum has been the industry's standard
+						dummy text ever since the 1500s, when an unknown printer took a
+						galley of type and scrambled it to make a type specimen book. It
+						has survived not only five centuries,</p>
+					<img src="images/schedule1.png" alt="schedule" />
+				</div>
+				<div class="box timing wow slideInRight">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Day</th>
+								<th>Gym timing</th>
+								<th>Morning Activity</th>
+								<th>Evening Activity</th>
+								<th>Room</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="day">Monday</td>
+								<td><strong>6:00 AM - 10:00 PM</strong></td>
+								<td>Flexibility Activities<br /> 7:00 AM - 9:00 AM
+								</td>
+								<td>Aerobic Activities <br /> 6:00 PM - 8:00 PM
+								</td>
+								<td>Main Hall</td>
+							</tr>
+							<tr>
+								<td class="day">Tuesday</td>
+								<td><strong>6:00 AM - 10:00 PM</strong></td>
+								<td>Zumba <br /> 7:00 AM - 9:00 AM
+								</td>
+								<td>Muscle Strengthening <br /> 6:00 PM - 8:00 PM
+								</td>
+								<td>Main Hall</td>
+							</tr>
+							<tr>
+								<td class="day">Wednesday</td>
+								<td><strong>6:00 AM - 10:00 PM</strong></td>
+								<td>Commando Training<br /> 7:00 AM - 9:00 AM
+								</td>
+								<td>Endurance activities <br /> 6:00 PM - 8:00 PM
+								</td>
+								<td>Main Hall</td>
+							</tr>
+							<tr>
+								<td class="day">Thursday</td>
+								<td><strong>6:00 AM - 10:00 PM</strong></td>
+								<td>Endurance activities<br /> 7:00 AM - 9:00 AM
+								</td>
+								<td>Commando Training <br /> 6:00 PM - 8:00 PM
+								</td>
+								<td>Main Hall</td>
+							</tr>
+							<tr>
+								<td class="day">Friday</td>
+								<td><strong>6:00 AM - 10:00 PM</strong></td>
+								<td>Muscle Strengthening <br /> 7:00 AM - 9:00 AM
+								</td>
+								<td>Zumba <br /> 6:00 PM - 8:00 PM
+								</td>
+								<td>Main Hall</td>
+							</tr>
+							<tr>
+								<td class="day">Saturday</td>
+								<td><strong>6:00 AM - 10:00 PM</strong></td>
+								<td>Aerobic Activities <br /> 7:00 AM - 9:00 AM
+								</td>
+								<td>Flexibility Activities <br /> 6:00 PM - 8:00 PM
+								</td>
+								<td>Main Hall</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Schedule -->
 
 
 
 
-<!-- Start Price -->
-<section class="price-package" id="price">
-    <div class="container">
-          <h2>Choose Your Package</h2>
-          <p class="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-          <div class="content">
-                <div class="box wow bounceInUp">
-                      <div class="inner">
-                             <div class="price-tag">
-                                   $59/Month
-                             </div>
-                             <div class="img">
-                                  <img src="images/price1.jpg" alt="price" />
-                             </div>
-                             <div class="text">
-                                   <h3>Body Building Training</h3>
-                                   <p>Get Free WiFi</p>
-                                   <p>Month to Month</p>
-                                   <p>No Time Restrictions</p>
-                                   <p>Gym and Cardio</p>
-                                   <p>Service Locker Rooms</p>
-                                   <a href="" class="btn">Join Now</a>
-                             </div>
-                      </div>
-                </div>
-                <div class="box wow bounceInUp" data-wow-delay="0.2s">
-                      <div class="inner">
-                             <div class="price-tag">
-                                   $69/Month
-                             </div>
-                             <div class="img">
-                                  <img src="images/price2.jpg" alt="price" />
-                             </div>
-                             <div class="text">
-                                   <h3>Body Building Training</h3>
-                                   <p>Get Free WiFi</p>
-                                   <p>Month to Month</p>
-                                   <p>No Time Restrictions</p>
-                                   <p>Gym and Cardio</p>
-                                   <p>Service Locker Rooms</p>
-                                   <a href="" class="btn">Join Now</a>
-                             </div>
-                      </div>
-                </div>
-                <div class="box wow bounceInUp" data-wow-delay="0.4s">
-                      <div class="inner">
-                             <div class="price-tag">
-                                   $99/Month
-                             </div>
-                             <div class="img">
-                                  <img src="images/price3.jpg" alt="price" />
-                             </div>
-                             <div class="text">
-                                   <h3>Body Building Training</h3>
-                                   <p>Get Free WiFi</p>
-                                   <p>Month to Month</p>
-                                   <p>No Time Restrictions</p>
-                                   <p>Gym and Cardio</p>
-                                   <p>Service Locker Rooms</p>
-                                   <a href="" class="btn">Join Now</a>
-                             </div>
-                      </div>
-                </div>
-          </div>
-    </div>
-</section>
-<!-- End Price -->
+	<!-- Start Gallery -->
+	<section class="gallery" id="gallery">
+		<h2>Workout Gallery</h2>
+		<div class="content">
+			<div class="box wow slideInLeft">
+				<img src="images/gallery1.jpg" alt="gallery" />
+			</div>
+			<div class="box wow slideInRight">
+				<img src="images/gallery2.jpg" alt="gallery" />
+			</div>
+			<div class="box wow slideInLeft">
+				<img src="images/gallery3.jpg" alt="gallery" />
+			</div>
+			<div class="box wow slideInRight">
+				<img src="images/gallery4.jpg" alt="gallery" />
+			</div>
+		</div>
+	</section>
+	<!-- End Gallery -->
 
 
 
 
-
- 
- <div class="copyright">
-    <div class="copyicon">
-        PowerBy &copy; Focus5Fitness
-    </div>
-    <div class="instruction">
-        All Rights Reserved
-    </div>
-</div>
-<!-- End Contact -->
-
-
-
-
-
-
-
-
-
-
-
-
+	<!-- Start Price -->
+	<section class="price-package" id="price">
+		<div class="container">
+			<h2>Choose Your Package</h2>
+			<p class="title-p">Lorem Ipsum is simply dummy text of the
+				printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s,</p>
+			<div class="content">
+				<div class="box wow bounceInUp">
+					<div class="inner">
+						<div class="price-tag">$59/Month</div>
+						<div class="img">
+							<img src="images/price1.jpg" alt="price" />
+						</div>
+						<div class="text">
+							<h3>Body Building Training</h3>
+							<p>Get Free WiFi</p>
+							<p>Month to Month</p>
+							<p>No Time Restrictions</p>
+							<p>Gym and Cardio</p>
+							<p>Service Locker Rooms</p>
+							<a href="" class="btn">Join Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="box wow bounceInUp" data-wow-delay="0.2s">
+					<div class="inner">
+						<div class="price-tag">$69/Month</div>
+						<div class="img">
+							<img src="images/price2.jpg" alt="price" />
+						</div>
+						<div class="text">
+							<h3>Body Building Training</h3>
+							<p>Get Free WiFi</p>
+							<p>Month to Month</p>
+							<p>No Time Restrictions</p>
+							<p>Gym and Cardio</p>
+							<p>Service Locker Rooms</p>
+							<a href="" class="btn">Join Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="box wow bounceInUp" data-wow-delay="0.4s">
+					<div class="inner">
+						<div class="price-tag">$99/Month</div>
+						<div class="img">
+							<img src="images/price3.jpg" alt="price" />
+						</div>
+						<div class="text">
+							<h3>Body Building Training</h3>
+							<p>Get Free WiFi</p>
+							<p>Month to Month</p>
+							<p>No Time Restrictions</p>
+							<p>Gym and Cardio</p>
+							<p>Service Locker Rooms</p>
+							<a href="" class="btn">Join Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Price -->
 
 
 
 
 
 
+	<div class="copyright">
+		<div class="copyicon">PowerBy &copy; Focus5Fitness</div>
+		<div class="instruction">All Rights Reserved</div>
+	</div>
+	<!-- End Contact -->
 
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- jquery -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
         $(document).ready(function () {
 
             $(".ham-burger, .nav ul li a").click(function () {
@@ -475,13 +497,14 @@
                         window.location.hash = hash;
                     });
 
-                    // add active class in navigation
-                    // $(".nav ul li a").removeClass("active")
+                     //add active class in navigation
+                     //$(".nav ul li a").removeClass("active")
                     // $(this).addClass("active")
                 }
             })
         })
 
+        
     </script>
 
 </body>
