@@ -149,7 +149,25 @@ header .container .login a{
 header .container .login a:hover{
 	color: #c11325;
 }
-
+header .container .login .logout{
+	display: flex;
+}
+header .container .login .logout button{
+    text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Open-Sans', sans-serif;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+header .container .login .logout button:hover{
+	color: #c11325;
+}
 /* home */
 
 

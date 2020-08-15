@@ -11,5 +11,6 @@ C:\Users\Hp\eclipseEE-workspace\DockerSpring\src\main\java\com\docker\rest\LogRe
 C:\Users\Hp\eclipseEE-workspace\DockerSpring\src\main\java\com\docker\service\MessageServiceImplementation.java
 C:\Users\Hp\eclipseEE-workspace\DockerSpring\src\main\java\com\docker\rest\DemoRestApi.java
 C:\Users\Hp\eclipseEE-workspace\DockerSpring\src\main\java\com\docker\service\UsersProfileServiceImpl.java
+C:\Users\Hp\eclipseEE-workspace\DockerSpring\src\main\java\com\docker\security\configuration\SecurityConfiguration.java
 C:\Users\Hp\eclipseEE-workspace\DockerSpring\src\main\java\com\docker\entity\Authorities.java
 C:\Users\Hp\eclipseEE-workspace\DockerSpring\src\main\java\com\docker\controller\GymController.java

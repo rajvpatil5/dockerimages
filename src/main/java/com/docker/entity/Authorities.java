@@ -14,10 +14,6 @@ import javax.persistence.Table;
 @Table(name = "authorities")
 public class Authorities {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "role_id")
-	private int id;
-	
 	@Column(length = 150)
 	private String username;
 	private String authority;
@@ -31,12 +27,6 @@ public class Authorities {
 	}
 	public void setUsers(Users users) {
 		this.users = users;
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	public String getUsername() {
 		return username;
@@ -54,9 +44,8 @@ public class Authorities {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Authorities(int id, String username, String authority, Users users) {
+	public Authorities(String username, String authority, Users users) {
 		super();
-		this.id = id;
 		this.username = username;
 		this.authority = authority;
 		this.users = users;

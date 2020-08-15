@@ -16,24 +16,15 @@ import javax.persistence.Table;
 public class Users {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "role_id")
-	private int id;
-
 	@Column(nullable=false,length = 150)
 	private String username;
 	private String password;
+	@Column(name="enabled")
 	private int enable;
 
 	@OneToMany(mappedBy = "users", cascade = CascadeType.ALL)
 	private List<Authorities> authorities;
-	public int getId() {
-		return id;
-	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public String getUsername() {
 		return username;
@@ -72,9 +63,9 @@ public class Users {
 		this.authorities = authorities;
 	}
 
-	public Users(int id, String username, String password, int enable, List<Authorities> authorities) {
+	public Users(String username, String password, int enable, List<Authorities> authorities) {
 		super();
-		this.id = id;
+
 		this.username = username;
 		this.password = password;
 		this.enable = enable;

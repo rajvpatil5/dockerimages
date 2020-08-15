@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org">
 
 <head>
 <meta charset="UTF-8">
@@ -15,7 +17,14 @@
 				<a href="">Fitness <span>Club</span></a>
 			</div>
 			<div class="login">
-				<a href="/registration">Register Now</a> <a href="/signin">LogIn</a>
+			<div sec:authorize="isAuthenticated()" class ="logout">
+				<a href="/profile" th:text="${user.get(0).getFirstName()}"></a>
+    				<form th:action="@{/logout}" method="post">
+         				<button type="submit">Sign Out</button>        
+ 				</form>
+				</div>
+				<a href="/registration">Register Now</a> 
+				<a href="/signin">LogIn</a>
 			</div>
 			<a href="javascript:void(0)" class="ham-burger"> <span></span> <span></span>
 				<span></span>

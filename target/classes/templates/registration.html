@@ -49,15 +49,16 @@ margin-bottom:25px;
 		<div class="container">
 			<div class="content">
 				<div class="box form wow slideInLeft">
-					<form th:action="@{/register}" th:object="${regi}" method="post">
+					<form th:action="@{/register}" th:object="${regi}"  method="post">
+						<input type="hidden" th:field="*{id}">
 						<input type="text" placeholder="First Name" th:field="*{firstName}"> 
-						<input type="text" placeholder="Last Name" th:field="*{lastName}"> 
+						<input type="text" placeholder="Last Name" th:field="*{lastName}" > 
 						<input type="number" placeholder="Age" th:field="*{age}"> 
 						<input type="email" placeholder="Email Id" th:field="*{emailId}"> 
 						<div class="errormessage" th:if="${errorMessage}">
     						<div th:text="${errorMessage}"></div>
 						</div>
-						<input type="password" placeholder="Password" th:field="*{password}"> 
+						<input type="password" placeholder="Password" th:field="*{password}" > 
 						<input type="number" placeholder="Mobile Number" th:field="*{mobileNumber}"> 
 						<button type="submit" th:onclick="javascript:alert('Your details will be save successfully!!! Click OK to go to Home');">Register Now</button>
 					</form>

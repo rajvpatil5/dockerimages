@@ -13,4 +13,5 @@ public interface UsersProfileDao extends JpaRepository<UsersProfile, Integer>{
 
 	@Query("from UsersProfile where lower(emailid) =lower(:email)")
 	List<UsersProfile> findemailId(@Param ("email") String email);
+	
 }
